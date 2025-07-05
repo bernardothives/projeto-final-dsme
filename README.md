@@ -12,7 +12,7 @@ O projeto é dividido em três subsistemas principais que se comunicam através 
 
 ```mermaid
 graph TD
-    subgraph ""
+    subgraph
         App["📱 Aplicativo Móvel"]
         ESP["📡 Dispositivo Embarcado (ESP32)"]
     end
