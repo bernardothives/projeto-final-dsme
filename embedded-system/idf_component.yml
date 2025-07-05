@@ -1,0 +1,3 @@
+dependencies:
+  # Dependência para o driver do sensor ultrassônico HC-SR04
+  vgerwen/hcsr04: "*"

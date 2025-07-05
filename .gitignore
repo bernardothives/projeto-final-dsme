@@ -1,0 +1,20 @@
+# Node.js / mobile-app
+node_modules/
+.expo/
+npm-debug.log
+yarn-error.log
+dist/
+.DS_Store
+
+# Backend (Bancos de dados SQLite)
+backend/service-control/controle.db
+backend/service-logging/logging.db
+*.db
+*.db-journal
+
+# Embedded-System (Arquivos de compilação do ESP-IDF)
+embedded-system/build/
+embedded-system/sdkconfig
+
+# Arquivos de IDEs
+.vscode/
