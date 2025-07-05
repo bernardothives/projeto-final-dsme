@@ -35,8 +35,8 @@ graph TD
     ESP -- "Envia Dados (POST /logs)" --> Gateway
     App -- "Busca Histórico (GET /logs)" --> Gateway
 
-    style App fill:#FFFFFF,stroke:#333,stroke-width:2px
-    style ESP fill:#FFFFFF,stroke:#333,stroke-width:2px
+    style App fill:#000000,stroke:#333,stroke-width:2px
+    style ESP fill:#000000,stroke:#333,stroke-width:2px
     style Gateway fill:#000000,stroke:#333,stroke-width:2px
 ```
 
