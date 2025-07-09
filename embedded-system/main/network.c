@@ -8,7 +8,7 @@ static const char *TAG = "NETWORK_CLIENT";
 // ###################################################################################
 // ##  IMPORTANTE: Substitua pelo IP do computador onde o backend está rodando      ##
 // ###################################################################################
-#define BACKEND_IP "192.168.1.10" // Exemplo, use o seu IP real (comando 'ipconfig' ou 'ifconfig')
+#define BACKEND_IP "10.92.179.4" // Exemplo, use o seu IP real (comando 'ipconfig' ou 'ifconfig')
 
 // --- URLs do Backend ---
 #define BACKEND_URL_CONFIG "http://" BACKEND_IP ":3000/config"

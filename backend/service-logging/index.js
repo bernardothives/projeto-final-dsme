@@ -6,7 +6,7 @@ const PORT = 3002;
 app.use(express.json());
 
 // Rota para o Embarcado enviar um novo log de distância
-app.post('/logs', (req, res) => {
+app.post('/', (req, res) => {
     const { distancia_cm } = req.body;
     if (distancia_cm === undefined) {
         return res.status(400).json({ "error": "Parâmetro 'distancia_cm' é obrigatório." });
@@ -21,7 +21,7 @@ app.post('/logs', (req, res) => {
 });
 
 // Rota para o App Móvel buscar o histórico de logs
-app.get('/logs', (req, res) => {
+app.get('/', (req, res) => {
     const sql = "SELECT * FROM logs ORDER BY timestamp DESC LIMIT 100";
     db.all(sql, [], (err, rows) => {
         if (err) {

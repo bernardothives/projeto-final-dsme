@@ -25,7 +25,7 @@ import { Ionicons } from '@expo/vector-icons'; // Expo já vem com essa bibliote
 // ##  Substitua pelo IP do computador onde o backend está rodando.                 ##
 // ##  Use o comando 'ipconfig' (Windows) ou 'ifconfig' (Linux/macOS) para achar.   ##
 // ###################################################################################
-const BACKEND_IP = '192.168.1.10'; // <-- MUDE AQUI
+const BACKEND_IP = '10.92.179.4'; // <-- MUDE AQUI
 const API_URL = `http://${BACKEND_IP}:3000`;
 
 // Cria uma instância do Axios para reutilização

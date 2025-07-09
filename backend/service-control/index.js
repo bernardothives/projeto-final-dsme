@@ -6,7 +6,7 @@ const PORT = 3001;
 app.use(express.json());
 
 // Rota para o App Móvel salvar a configuração
-app.post('/config', (req, res) => {
+app.post('/', (req, res) => {
     const { threshold_cm } = req.body;
     if (!threshold_cm) {
         return res.status(400).json({ "error": "Parâmetro 'threshold_cm' é obrigatório." });
@@ -21,7 +21,7 @@ app.post('/config', (req, res) => {
 });
 
 // Rota para o Embarcado buscar a configuração
-app.get('/config', (req, res) => {
+app.get('/', (req, res) => {
     const sql = "SELECT * FROM configuracao WHERE parametro = 'threshold_cm'";
     db.get(sql, [], (err, row) => {
         if (err) {

@@ -24,7 +24,7 @@ app.use(morgan('dev'));
 // Rota para o Microservice de Controle
 // Todas as requisições que chegarem em /config (ex: /config, /config/123)
 // serão redirecionadas para o serviço de controle.
-app.use('/config', createProxyMiddleware({
+app.use('/', createProxyMiddleware({
     target: aplicationTargets.control,
     changeOrigin: true, // Necessário para que o servidor de destino não recuse a requisição.
     pathRewrite: {
@@ -37,7 +37,7 @@ app.use('/config', createProxyMiddleware({
 // Rota para o Microservice de Logging
 // Todas as requisições que chegarem em /logs (ex: /logs, /logs/all)
 // serão redirecionadas para o serviço de logging.
-app.use('/logs', createProxyMiddleware({
+app.use('/', createProxyMiddleware({
     target: aplicationTargets.logging,
     changeOrigin: true,
     pathRewrite: {
